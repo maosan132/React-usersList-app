@@ -48,7 +48,7 @@ const AddUser = (props) => {
   return (
     <Wrapper>
       { error && <
-        ErrorModal
+        ErrorModal // error modal component
         title={error.title}
         message={error.message}
         onConfirm={errorHandler}
