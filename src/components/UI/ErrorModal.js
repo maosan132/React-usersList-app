@@ -4,9 +4,6 @@ import classes from './ErrorModal.module.css';
 
 const ErrorModal = (props) => {
 
-  const clickHandler = () => {
-
-  }
   return (
     <div>
       <div className={classes.backdrop} onClick={props.onConfirm}/>
