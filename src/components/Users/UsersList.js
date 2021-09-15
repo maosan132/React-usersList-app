@@ -1,11 +1,20 @@
-import React from 'react'
+import Card from './UI/Card'
 
-const UsersList = () => {
+const UsersList = (props) => {
   return (
-    <div>
-      
-    </div>
+    <Card>
+    <ul>
+      {props.users.map(u => (
+      <li
+        key={u.id}
+      >
+        {u.name} ({u.age} years old)
+      </li>
+      ))}
+    </ul>
+    </Card>
+
   )
 }
 
-export default UsersList
+export default UsersList;
