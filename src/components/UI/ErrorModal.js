@@ -1,16 +1,17 @@
 import Card from './components/UI/Card';
 import Button from './components/UI/Button';
+import classes from './ErrorModal.module.css';
 
 const ErrorModal = (props) => {
   return (
-    <Card>
-      <header>
-        <h2>{props.title</h2>
+    <Card className={classes.modal}>
+      <header className={classes.header}>
+        <h2>{props.title}</h2>
       </header>
-      <div>
+      <div className={classes.content}>
         <p>{props.message}</p>
       </div>
-      <footer>
+      <footer className={classes.actions}>
         <Button onClick={props.onClear}>Ok</Button>
       </footer>
     </Card>
